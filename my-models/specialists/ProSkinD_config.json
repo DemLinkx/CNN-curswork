@@ -1,0 +1,35 @@
+{
+  "name": "ProSkinD",
+  "classes": [
+    "bkl",
+    "nv",
+    "df",
+    "bcc",
+    "akiec"
+  ],
+  "excluded": [
+    "mel",
+    "vasc"
+  ],
+  "focus": "bcc",
+  "seed": 104,
+  "epochs_max": 20,
+  "patience": 5,
+  "train_images": 7012,
+  "val_images": 1748,
+  "train_class_counts": {
+    "bkl": 933,
+    "nv": 5335,
+    "df": 87,
+    "bcc": 398,
+    "akiec": 259
+  },
+  "architecture": "ProSkinCNN, four residual blocks 64/128/256/512",
+  "split": "original images, lesion_id 80/20, random_state=42",
+  "optimizer": "AdamW lr=0.001 weight_decay=0.0001",
+  "scheduler": "CosineAnnealingLR",
+  "loss": "weighted CrossEntropyLoss",
+  "best_epoch": 11,
+  "best_val_macro_f1": 0.39839691353466383,
+  "epochs_run": 16
+}

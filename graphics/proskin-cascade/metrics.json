@@ -1,0 +1,28 @@
+{
+  "images": 1512,
+  "threshold": 0.3,
+  "base": {
+    "macro_f1": 0.4870045820995306,
+    "weighted_f1": 0.6870637577120983,
+    "accuracy": 0.6792328042328042,
+    "errors": 485
+  },
+  "cascade": {
+    "macro_f1": 0.3644780910233247,
+    "weighted_f1": 0.576881362479638,
+    "accuracy": 0.542989417989418,
+    "errors": 691
+  },
+  "outcomes": {
+    "images": 1512,
+    "changed": 536,
+    "fixed": 89,
+    "new_errors": 295,
+    "wrong_both": 396,
+    "base_errors": 485,
+    "cascade_errors": 691
+  },
+  "routed": 933,
+  "macro_f1_delta": -0.12252649107620595,
+  "accuracy_delta": -0.13624338624338617
+}
